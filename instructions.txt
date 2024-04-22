@@ -1,0 +1,52 @@
+Description:
+Now that you have a working menu page, Assignment 4 requires you to implement a backend to
+handle the interactive order form. Using Node.js and Express, you will set up a basic server to
+manage POST and GET requests. This involves processing form data to calculate the total
+amount of an order upon submission and serving your order confirmation web page.
+Note: If the calculation of the total amount has previously been implemented on the frontend,
+you are required to shift this functionality to the backend.
+Make sure the server-side logic is robust and functional!
+RUBRICS FOR ASSIGNMENT
+1. Server Setup and Basic Routing (20 points):
+• Effective setup of a Node.js server using Express. (10 points)
+• Implementation of routing to handle POST requests for processing the order form data
+and GET requests for serving the order confirmation web page. (10 points)
+2. Form Handling and Data Processing (50 points):
+• Capability to handle POST requests to receive and process form data. (10 points)
+• Use of middleware to parse incoming data and calculate total amounts. (10 points)
+• Proper error handling and feedback to the client for form validation failures (e.g., the
+quantity of the items should be positive). (15 points)
+• Capability to handle GET requests to display the total amount of the order in a new order
+confirmation web page. (15 points)
+Total Points for Assignment 4: 70
+Assignment 5
+Description:
+For Assignment 5, you are required to refine and organize your web application project. Please
+focus on the following tasks:
+RUBRICS FOR ASSIGNMENT
+Assignments 4&5 CIS 2336 SP 2024
+1. Code Cleanup: Review your codebase for any unnecessary or redundant code and remove
+it. Ensure that your code is well-documented and adheres to the coding standards
+discussed in class. (10 points)
+2. Bug Fixing: Test your application thoroughly and fix any bugs or errors you encounter.
+Make sure to document the changes you make and the bugs you address. (10 points)
+3. File Organization: Organize all project files systematically. This includes properly
+naming files and storing them in appropriate directories (see requirements below in
+SUBMISSION-Directory Structure). (5 points)
+4. README File: Update the README. Ensure it accurately describes the project setup,
+how to run the application, and lists all dependencies. (5 points)
+Total Points for Assignment 5: 30
+SUBMISSION:
+Before the deadline, it must be turned in on Canvas and in the GitHub Assignment 4 folder.
+1. Create a main folder named assign4_firstname_lastname-Section Number (e.g.,
+assign4_Mark_smith-19387).
+2. Directory Structure:
+Inside your main folder, create two main subfolders: Fonrtend, Backend.
+Inside the subfolder of Frontend: Place all frontend files here, including:
+• HTML: All HTML files.
+• CSS: All CSS styling files.
+• Image: Any images used in your project.
+Inside the subfolder of Backend: Store all backend scripts and API-related files here.
+3. Right-click the main folder you want to compress / zip.
+4. Choose "Send to" and then "Compressed (zipped) folder." A zipped version of your folder
+will appear in the same location. Upload that ZIP file on GitHub and Canvas.

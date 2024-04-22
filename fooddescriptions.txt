@@ -1,0 +1,64 @@
+Appetizers -----
+
+Onigiri: Delicious seasoned rice with savory fillings and seaweed wrapping. A traditional Japanese delight!
+
+5 Sushi Platter: A collection of 2 sushi roll slices carefully prepared with fish, seaweed, rice, and seasonings,
+and 3 pieces of nigiri, including smoked salmon, tuna, and sushi rice.
+
+Korean Fish Cake: Savory, tender fish cakes infused with Korean spices, a delightful appetizer bursting with flavor!
+
+Miso Soup: Classic soup with tofu, seaweed, and miso paste.</p>
+
+Fries: Crispy potato slices fried unti golden brown with light salt.
+
+Breakfast -----
+
+<h3>Egg Fried Rice</h3>
+            <p>A classic fusion of fluffy rice, scrambled eggs, and savory seasonings.</p>
+            <h3>Omelette</h3>
+            <p>Fluffy eggs folded around a yummy filling. A satisfying breakfast option!</p>
+            <h3>Instant Noodle w/ Egg</h3>
+            <p>Quick, flavorful noodles in a savory broth with a runny egg.</p>
+            <h3>Fluffy Pancakes</h3>
+            <p>Fluffy stacks of golden goodness, a timeless breakfast treat!</p>
+            <h3>Donut</h3>
+            <p>Irresistable round dough with glaze!</p>
+
+Lunch/Dinner -----
+
+<div class="fooditem">
+                <h3>Tonkotsu Ramen</h3>
+                <p>Hearty noodles in flavorful broth, a Japanese comfort classic!</p>
+            </div>
+
+            <div class="fooditem">
+                <h3>Chicken Stir Fry</h3>
+                <p>Tender chicken and crisp vegetables wok-tossed in savory sauce and noodles.</p>
+            </div>
+
+            <div class="fooditem">
+                <h3>Hamburger</h3>
+                <p> Juicy beef patty with fresh toppings on a soft bun, a classic favorite!</p>
+            </div>
+
+            <div class="fooditem">
+                <h3>Pizza</h3>
+                <p>Oven-baked perfection topped with savory sauce, gooey cheese, and toppings.</p>
+            </div>
+
+            <div class="fooditem">
+                <h3>Garlic Parmesan Wings</h3>
+                <p>Crispy chicken wings coated in savory Parmesan cheese, a flavorful delight!</p>
+
+Dessert -----
+
+<h3>Vanilla Cake w/ Sprinkles</h3>
+            <p>Moist and fluffy layers of cake infused with delicate vanilla flavor.</p>
+            <h3>Strawberry Tanghulu</h3>
+            <p>Juicy strawberries coated in a crisp, sweet glaze.</p>
+            <h3>Tempura Ice Cream</h3>
+            <p>Creamy ice cream wrapped in a crispy, golden tempura shell, a delightful fusion of textures!</p>
+            <h3>Ice Cream Rolls</h3>
+            <p>Creamy, freshly made ice cream rolled into delightful spirals.</p>
+            <h3>Milkshake</h3>
+            Rich, creamy goodness blended to perfection, a timeless classic.

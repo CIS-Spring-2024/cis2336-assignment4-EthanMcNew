@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section id="checkout_header">
+            <header>
+                <h1>Checkout</h1>
+            </header>
+        </section>
+
+        <!--Every page on the project will have this horizontal navigation bar-->
+        <ul class="topnav">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Bio</a></li>
+        </ul>
+        <div id="receipt">
+            <div id="checkoutcontent">
+            </div>
+    
+            <div id="totalcost">
+            </div>
+        </div>
+
+        <!--Button to submit the order-->
+        <form id="orderform" method="post">
+            <input type="hidden" id="order" name="order_array" value="">
+            <input type="hidden" id="cost" name="total_cost" value="">
+            
+            <button id="submitbutton" type="submit">Checkout!</button>
+        </form>
+
+        <footer>
+            <p>
+                <img src="img/other/uhlogo.jpg"/><br>
+                &copy; 2024 Crazy McNew's Cafeteria. All rights reserved.</p>
+        </footer>
+
+        <script>
+            // Retrieve food numbers and prices for calculation -----------------------------------------------------------------------
+            const foodNumbersDict2 = JSON.parse(localStorage.getItem("foodNumbersDictionary"));
+
+            const foodPriceDict2 = JSON.parse(localStorage.getItem("foodPriceDictionary"));
+
+            const foodNameList = Object.keys(foodNumbersDict2);
+
+            // Create a table of receipt items and append them as rows, find total cost and order -------------------------------------
+            let totalCost = 0;
+            let orderArray = [];
+
+            // Get checkout area to put table in and create table
+            const checkoutElement = document.getElementById("checkoutcontent");
+
+            const receiptTable = document.createElement("table");
+            receiptTable.setAttribute("id", "items");
+
+            // Add the rows to the table
+            for (i = 0; i < foodNameList.length; i++) {
+                if (foodNumbersDict2[foodNameList[i]] != 0) {
+                    // Create receipt row
+                    let receiptRow = document.createElement("tr");
+                    receiptRow.className = "receiptrow";
+
+                    // Create list of data to add to each row
+                    let receiptDataList = [];
+
+                    // Food name
+                    receiptDataList.push(foodNameList[i]);
+
+                    // Food amount ordered
+                    receiptDataList.push("Ordered: " + String(foodNumbersDict2[foodNameList[i]]));
+
+                    // Price for one item
+                    receiptDataList.push("Price: $" + String(foodPriceDict2[foodNameList[i]].toFixed(2)));
+
+                    // Calculate item total cost and add that to the total cost
+                    itemTotalCost = foodNumbersDict2[foodNameList[i]] * foodPriceDict2[foodNameList[i]];
+                    totalCost += (itemTotalCost);
+
+                    // Create string for order array and append it to the array
+                    orderString = String(foodNumbersDict2[foodNameList[i]]) + " order of " + foodNameList[i];
+                    orderArray.push(orderString);
+                    
+                    // Total cost for one item
+                    receiptDataList.push("Total for item: $" + String(itemTotalCost.toFixed(2)));
+
+                    // Add data to the rows
+                    for (j = 0; j < receiptDataList.length; j++) {
+                        let receiptData = document.createElement("td");
+                        receiptData.appendChild(document.createTextNode(receiptDataList[j]));
+
+                        receiptRow.appendChild(receiptData);
+                    };
+
+                    // Add the row to the table
+                    receiptTable.appendChild(receiptRow);
+                };
+            };
+
+            // Append table to page, add subtotal and total elements -----------------------------------------------------------------
+            checkoutElement.appendChild(receiptTable);
+
+            const totalElement = document.getElementById("totalcost");
+
+            const subtotalP = document.createElement("p");
+            subtotalP.appendChild(document.createTextNode("Subtotal: $" + String(totalCost.toFixed(2))));
+
+            totalElement.appendChild(subtotalP);
+
+            totalCost *= 1.0825;
+            totalCost = totalCost.toFixed(2);
+
+            const totalP = document.createElement("p");
+            totalP.setAttribute("id", "totaltext");
+            totalP.appendChild(document.createTextNode("Total cost: $" + String(totalCost)));
+
+            totalElement.appendChild(totalP);
+
+            // Add values to form, perform validation, then submit -------------------------------------------------------------------
+            document.getElementById('order').value = orderArray;
+            document.getElementById('cost').value = parseFloat(totalCost);
+
+            document.querySelector('button[type="submit"]').addEventListener('click', function(e) {
+                e.preventDefault();
+                if (totalCost == 0) {
+                    alert("No items in checkout.");
+                } else {
+                    alert("Thanks for ordering from Crazy McNew's!");
+                    e.target.form.submit();
+                }
+            });
+        </script>
+    </body>
+</html>

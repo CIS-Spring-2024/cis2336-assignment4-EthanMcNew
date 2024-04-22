@@ -1,0 +1,266 @@
+/*Associated with ALL files (generic)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1000px;
+    font-size: 20px;
+    background-color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    padding: 100px;
+    font-size: 60px;
+    color: oldlace;
+    text-shadow: 3px 3px black;
+    border: 3px solid #6c1e0e;
+    text-align: center;
+}
+
+footer {
+    font-size: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 3px solid #cecece;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+}
+
+.topnav {
+    background-color: burlywood;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.topnav li{
+    float: left;
+}
+
+.topnav a {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+.topnav a.active {
+    background: #277e3f;
+    color: antiquewhite;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #bb2017;
+}
+
+a:hover {
+    background: #bb2017;
+    color: antiquewhite;
+    text-shadow: none;
+}
+
+/*Associated with index.html*/
+#bio_header {
+    background-image: url('img/pagesections/chinesefoodbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#biophoto {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #48b75b, #457eba);
+
+}
+
+#biophoto img {
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid darkblue;
+}
+
+#biophoto figcaption {
+    margin-top: 10px;
+    color: antiquewhite;
+}
+
+.bio_section {
+    margin: 20px;
+}
+
+#mainlink {
+    padding: 60px 0;
+    text-align: center;
+    background-color: burlywood;
+}
+
+h2 {
+    color: antiquewhite;
+    text-shadow: 2px 2px chocolate;
+}
+
+/*Associated with main.html*/
+#homepage_header {
+    background-image: url('img/pagesections/shoyuramenbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#maintomenu {
+    margin-bottom: 80px;
+    padding: 200px 0;
+    background-image: url('img/pagesections/japanesebuffet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#maintoabout {
+    padding: 200px 0;
+    background-image: url('img/pagesections/restaurantteam.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#maintomenu h2 {
+    margin-bottom: 30px;
+}
+
+#maintomenu p, #maintoabout p {
+    padding: 10px;
+    background-color: #bb2017;
+    color: antiquewhite;
+    width: fit-content;
+    margin: auto;
+}
+
+.linkfrommain {
+    text-shadow: 1px 1px black;
+    margin-top: 30px;
+}
+
+/*Associated with menu.html*/
+#menu_header {
+    background-image: url('img/pagesections/restaurantroom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    margin: 20px;
+}
+
+.menuchunk {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menusection {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    background-color: #457eba;
+    width: 40%
+}
+
+.menusection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fooditem {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 5px solid darkblue;
+    display: flex;
+}
+
+.fooditem img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.itemcontent {
+    margin-left: 10px;
+}
+
+.itemcontent h4, .description {
+    margin-bottom: 10px;
+}
+
+.addbutton {
+    padding: 2px;
+    background-color: green;
+    color: white;
+}
+
+.removebutton {
+    margin-bottom: 10px;
+    padding: 2px;
+    background-color: red;
+    color: white;
+}
+
+#menutocheckout {
+    text-align: center;
+    padding: 60px 0;
+    background-color: burlywood;
+}
+
+/*Associated with checkout.html*/
+#checkout_header {
+    background-image: url('img/pagesections/waiters.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#receipt {
+    margin: 20px;
+    border: 20px solid #E5B922;
+    background-color: white;
+}
+
+#items {
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#items td {
+    padding: 20px;
+}
+
+#totalcost {
+    text-align: center;
+}
+
+#totalcost p {
+    padding: 20px;
+}
+
+#totaltext {
+    color: red;
+}
+
+#orderform {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#submitbutton {
+    padding: 4px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+}
