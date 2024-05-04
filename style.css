@@ -264,3 +264,17 @@ h2 {
     background-color: green;
     color: white;
 }
+
+/*Associated with about.html*/
+#about_header {
+    background-image: url('img/pagesections/happyguy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Associated with contact.html*/
+#contact_header {
+    background-image: url('img/pagesections/phones.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

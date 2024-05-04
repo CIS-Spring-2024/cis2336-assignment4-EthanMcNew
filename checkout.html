@@ -30,7 +30,7 @@
         </div>
 
         <!--Button to submit the order-->
-        <form id="orderform" method="post">
+        <form id="orderform" action="http://localhost:3124/getorder" method="post">
             <input type="hidden" id="order" name="order_array" value="">
             <input type="hidden" id="cost" name="total_cost" value="">
             
@@ -128,14 +128,14 @@
             document.getElementById('cost').value = parseFloat(totalCost);
 
             document.querySelector('button[type="submit"]').addEventListener('click', function(e) {
-                e.preventDefault();
                 if (totalCost == 0) {
+                    e.preventDefault();
                     alert("No items in checkout.");
                 } else {
                     alert("Thanks for ordering from Crazy McNew's!");
-                    e.target.form.submit();
                 }
             });
+            
         </script>
     </body>
 </html>
