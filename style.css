@@ -272,9 +272,79 @@ h2 {
     background-size: cover;
 }
 
+#abouttobio {
+    text-align: center;
+    padding: 60px 0;
+    background-image: linear-gradient(to bottom right, #48b75b, #457eba);
+}
+
+#abouttocontact {
+    text-align: center;
+    padding: 60px 0;
+    background-color: burlywood;
+}
+
+.aboutsection {
+    margin: 60px 0;
+    padding: 60px;
+    text-align: center;
+    background-color: #36c951;
+    border:5px solid darkgreen;
+}
+
+.aboutimage img {
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid darkblue;
+}
+
+.aboutimage figcaption {
+    margin-top: 10px;
+    color: antiquewhite;
+}
+
+.aboutsection p {
+    margin-top: 20px;
+}
+
 /*Associated with contact.html*/
 #contact_header {
     background-image: url('img/pagesections/phones.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#contactinfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactside {
+    width: 40%;
+}
+
+.contactsection {
+    background-color: #457eba;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contactsection h2 {
+    text-align: center;
+}
+
+.contactsection p {
+    margin: 10px;
+}
+
+.contactsection img {
+    width: 100%;
+}
+
+#contactstatement {
+    padding: 60px 0;
+    color: red;
+    background-color: burlywood;
+    text-align: center;
 }
